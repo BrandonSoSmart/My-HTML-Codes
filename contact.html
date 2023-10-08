@@ -1,0 +1,108 @@
+<html>
+    <head id="head">
+        <title id="title">My Third Page - Contact Form</title>
+        <link href="css/styles.css"type="text/css" rel="stylesheet" id="css"> 
+        <style>
+            #body {
+                background-color: rgb(193, 83, 83);
+            }
+            .contact{
+                text-decoration: dotted;
+                color:rgb(90, 217, 202);
+                border-style: dashed;
+                border-width: 2px;
+                border-color: greenyellow;
+                border-radius: 1px;
+            }
+            .contact {
+                text-align: left;
+                border-style: dotted;
+                width: 200px;
+                visibility: none;
+            }
+            #name {
+                color: rgb(40, 183, 191);
+            }
+            a:link{
+                color: rgb(47, 114, 181);
+                text-decoration: none;
+            }
+            a:visited{
+                color: tomato;
+            }
+            a:hover{
+                color: orange;
+                text-decoration: underline;
+            }
+            #title{
+                color:rgb(88, 5, 165);
+                border-style: dotted;
+                width: 200px;
+                visibility: none;
+            }
+            #input1{
+                color:rgb(202, 238, 42);
+                padding: 5px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(227, 146, 116);
+                border-radius: 49px;
+            }
+            #input2{
+                color:rgb(202, 238, 42);
+                padding: 5px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(200, 200, 47);
+                border-radius: 49px;
+            }
+            #input3{
+                color:rgb(57, 220, 87);
+                padding: 5px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(136, 225, 156);
+                border-radius: 49px;
+            }
+            #input4{
+                color:rgb(65, 57, 180);
+                padding: 5px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(116, 188, 227);
+                border-radius: 49px;
+            }
+            #other{
+                color:rgb(215, 131, 220);
+                padding: 1px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(225, 194, 223);
+                border-radius: 49px;
+            }
+            #photo{
+                color:rgb(177, 202, 227);
+            }
+        </style>
+    </head>
+    <body id="body">
+        <h1 id="title">Contact Form</h1>
+        <form action="./save_contact.php"method="get" id="getaction"> 
+            <div class="contact">
+                <p id="input1">Your Name:
+                    <input type="text" name="name" size="15" maxlength="15" id="name"/></p>
+                <p id="input2">Classification:</p>
+                    <input type="radio" name="classification" value="Freshmen" checked="freshmen"/> Freshmen
+                    <input type="radio" name="classification" value="Sophomore" /> Sophomore
+                    <input type="radio" name="classification" value="Junior" /> Junior
+                    <input type="radio" name="classification" value="Senior" /> Senior
+
+                <p id="input3">Upload your profile picture:</p>
+                    <input type="file" name="photo" id="photo"/>
+                <p id="input4"><input type="submit" value="Submit" id="submit"/></p>
+            </div>
+                <p id="other">Click <a href="me.html" id="me">me</a> to visit my about me page.</p>
+                <p id="other">Click <a href="index.html" id="index">me</a> to visit my original page.</p>
+        </form>
+    </body>
+</html>
